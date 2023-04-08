@@ -74,6 +74,7 @@ def get_role() -> List[Dict[str, str]]:
 
 def bot_talk(messages: List[Dict[str, str]]) -> None:
     audio_filename = "teste.wav"
+    #record_on_detect("teste", chunk=20482048)
     record_on_detect("teste")
     print(f"Recorded file saved as {audio_filename}")
 

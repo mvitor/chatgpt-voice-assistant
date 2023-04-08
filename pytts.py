@@ -15,8 +15,9 @@ voices = engine.getProperty('voices')
 
 print (voices)
 # Set the Portuguese voice
-engine.setProperty('voice', "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MSTTS_V110_ptBR_MariaM")
-
+#Windows
+#engine.setProperty('voice', "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MSTTS_V110_ptBR_MariaM")
+change_voice(engine, "pt_BR", "VoiceGenderFemale")
 
 engine.say(str(sys.argv[1]))
 engine.runAndWait()
