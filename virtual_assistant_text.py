@@ -9,7 +9,7 @@ from typing import Any, List, Dict
 
 # create a configparser instance and read the config file
 config = configparser.ConfigParser()
-config.read("config_en.ini")
+config.read("config.ini")
 
 # get the language and keywords from the config file
 language = config.get("speech_recognition", "language")
